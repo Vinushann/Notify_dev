@@ -17,6 +17,7 @@ class AlarmSchedulerImpl @Inject constructor(private val context: Context) : Ala
         checkAlarm()
     }
 
+    // setting the schedule alaram
     override fun scheduleAlarm(alarmInfo: AlarmInfo) {
         alarmManager.setExactAndAllowWhileIdle(
             AlarmManager.ELAPSED_REALTIME_WAKEUP,
